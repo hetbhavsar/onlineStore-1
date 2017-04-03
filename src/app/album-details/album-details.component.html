@@ -1,2 +1,13 @@
 
 <h2>This album has id number: {{albumId}}</h2>
+
+<div class="panel panel-info">
+  <div class="panel-heading" (click)="goToAlbumDetails(album)">
+    <h3><em>{{albumToDisplay.title}}</em> by {{albumToDisplay.artist}}</h3>
+  </div>
+  <div class="panel-body">
+    <p>
+      {{albumToDisplay.description}}
+    </p>
+  </div>
+</div>
